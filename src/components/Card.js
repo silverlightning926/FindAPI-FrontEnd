@@ -1,6 +1,21 @@
 import React from "react";
 
 const Card = ({url, title, description, auth, http, cors}) => {
+
+    function getAuth() {
+        switch(auth) {
+            case 'apiKey':
+                return 'API Key';
+                break;
+            case 'OAuth':
+                return "OAuth"
+                break;
+            default:
+                return "None"
+                break;
+        }
+    }
+
     return (
         <a href={url} className="card-link">
             <div className="card">
@@ -8,7 +23,7 @@ const Card = ({url, title, description, auth, http, cors}) => {
                     <h4><b>{title}</b></h4>
                     <p>{description}</p>
                     <div className="auth-div">
-                        Auth: {auth}
+                        Auth: {getAuth()}
                     </div>
                     <div className="card-tags">
                         {http? <p>HTML</p> : null}
