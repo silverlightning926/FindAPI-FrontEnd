@@ -20,5 +20,49 @@
 }
 
 .page-body {
-  padding: 0 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #dbdbdb;
+  transition: 0.3s;
+  width: 300px;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 #dbdbdb;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit
+  }
+
+.card h4 {
+  font-size: 30px;
+  margin: 10px 0 0;
+}
+
+.card p {
+  margin: 10px 0px 0px;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.card-tags {
+  display: flex;
+}
+
+.card-tags p {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #dedede;
+  color: black;
+  border-radius: 10px;
 }

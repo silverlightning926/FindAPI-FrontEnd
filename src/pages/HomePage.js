@@ -2,6 +2,7 @@ import React, {Component} from "react";
 
 // Component Imports
 import Header from "../components/Header";
+import Card from "../components/Card";
 
 class HomePage extends Component {
     componentDidMount() {
@@ -14,7 +15,7 @@ class HomePage extends Component {
                 <Header title="Find API" subtitle="Find Your API"/>
 
                 <div className="page-body">
-
+                    <Card/>
                 </div>
             </>
         )
