@@ -1,21 +1,13 @@
 import React from "react";
 import Card from "./Card";
+import {filter} from "lodash"
 
-const CardList = ({data}) => {
-
-    const categories =
-        [
-            {title: "Animals", name: "animals"},
-            {title: "Anti-Malware", name: "anti-malware"},
-            {title: "Art & Design", name: "art-design"},
-            {title: "Books", name: "books"}
-        ];
-
+const CardList = ({data, categories}) => {
     return (
         <>
             {
-                categories.map(category => (
-                    <>
+                categories.map((category, key) => (
+                    <div key={key}>
                         <h1 className="card-list-title">{category.title}</h1>
                         <div className="card-list">
                             {
@@ -32,7 +24,7 @@ const CardList = ({data}) => {
                                 )
                             }
                         </div>
-                    </>
+                    </div>
                 ))
             }
         </>

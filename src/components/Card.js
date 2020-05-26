@@ -6,13 +6,10 @@ const Card = ({url, title, description, auth, http, cors}) => {
         switch(auth) {
             case 'apiKey':
                 return 'API Key';
-                break;
             case 'OAuth':
-                return "OAuth"
-                break;
+                return "OAuth";
             default:
-                return "None"
-                break;
+                return "None";
         }
     }
 
