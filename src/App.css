@@ -31,6 +31,7 @@
   width: 300px;
   overflow-wrap: break-word;
   padding-bottom: 20px;
+  margin: 10px 10px;
 }
 
 .card:hover {
@@ -40,7 +41,7 @@
 .card-link {
   text-decoration: none;
   color: inherit
-  }
+}
 
 .card h4 {
   font-size: 30px;
@@ -48,11 +49,18 @@
 }
 
 .card p {
-  margin: 10px 0px 0px;
+  margin: 10px 0 0;
 }
 
 .container {
   padding: 2px 16px;
+}
+
+.auth-div
+{
+  font-size: 13.5px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .card-tags {
@@ -65,4 +73,16 @@
   background-color: #dedede;
   color: black;
   border-radius: 10px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: fit-content;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.card-list-title {
+  text-align: center;
 }

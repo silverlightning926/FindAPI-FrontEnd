@@ -2,11 +2,20 @@ import React, {Component} from "react";
 
 // Component Imports
 import Header from "../components/Header";
-import Card from "../components/Card";
+import CardList from "../components/CardList";
 
 class HomePage extends Component {
-    componentDidMount() {
+
+    state = {
+        data: [],
+        loading: true
+    }
+
+    async componentDidMount() {
         window.scrollTo(0,0);
+        this.setState({loading: true});
+        fetch('/all')
+            .then(data => data.json()).then(data => this.setState({data, loading: false}));
     }
 
     render() {
@@ -15,7 +24,9 @@ class HomePage extends Component {
                 <Header title="Find API" subtitle="Find Your API"/>
 
                 <div className="page-body">
-                    <Card/>
+                    {
+                        this.state.loading ? <div style={{textAlign: "center"}}>Loading...<br/></div> : <CardList data={this.state.data}/>
+                    }
                 </div>
             </>
         )

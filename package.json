@@ -2,6 +2,7 @@
   "name": "findapi-frontend",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://192.168.1.112:8000",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
