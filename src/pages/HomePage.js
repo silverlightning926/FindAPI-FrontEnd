@@ -34,7 +34,9 @@ class HomePage extends Component {
                                     {title: "Animals", name: "animals"},
                                     {title: "Anti-Malware", name: "anti-malware"},
                                     {title: "Art & Design", name: "art-design"},
-                                    {title: "Books", name: "books"}
+                                    {title: "Books", name: "books"},
+                                    {title: "Business", name: "business"},
+                                    {title: "Calenders", name: "calendar"},
                                 ]}
                             />
                     }
