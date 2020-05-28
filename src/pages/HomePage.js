@@ -11,7 +11,7 @@ class HomePage extends Component {
         loading: true
     }
 
-    componentDidMount = async () => {
+    componentDidMount() {
         window.scrollTo(0,0);
         this.setState({loading: true});
         fetch('/all')
