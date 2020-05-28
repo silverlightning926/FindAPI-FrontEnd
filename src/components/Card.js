@@ -23,7 +23,7 @@ const Card = ({url, title, description, auth, http, cors}) => {
                         Auth: {getAuth()}
                     </div>
                     <div className="card-tags">
-                        {http? <p>HTML</p> : null}
+                        {http? <p>HTTPS</p> : null}
                         {cors? <p>CORS</p> : null}
                     </div>
                 </div>

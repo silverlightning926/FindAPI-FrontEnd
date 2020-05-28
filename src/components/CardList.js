@@ -17,7 +17,7 @@ const CardList = ({data, categories}) => {
                                         description={api.description}
                                         url={api.link}
                                         auth={api.auth}
-                                        http={api.HTTP}
+                                        http={api.HTTPS}
                                         cors={api.CORS}
                                     />
                                 )
